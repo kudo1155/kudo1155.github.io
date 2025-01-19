@@ -1,0 +1,76 @@
+body{
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333; 
+}
+header{
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+nav a{
+    color: white;
+    padding: 1rem;
+    text-decoration: center;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    background-color: #575757;
+}
+section{
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+section img{
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem;
+}
+.timeline{
+    list-style: none;
+    padding: 0;
+}
+.timeline li{
+    padding-left: 1rem;
+    border-left: 2px solid #4CAF50;
+}
+.timeline li::before{
+    content: "\2022";
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+    position: relative;
+    left: -7px;
+    font-size: 36px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap:1rem;
+}
+.gallery img{
+    width: 100% ;
+    height: auto;
+    border-radius: 8px;
+}
+.gallery .label{
+    text-align: center;
+}
+footer{
+    background-color: #575757;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
